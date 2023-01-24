@@ -1,0 +1,19 @@
+a=185
+b=a-(0.4*a)
+try:
+    n1=int(input("Enter the no of fresh loaves: "))
+    n2=int(input("Enter the no of day old loaves: "))
+    if((n1>=0)&(n2>=0)):
+        a1=n1*a
+        a2=n2*b
+        total=a1+a2
+        print("Regular price",a)
+        print("Discount price",b)
+        print("Price of fresh loaves = ",a1)
+        print("Price of day old loaves = ",a2)
+        print("Total Price = ",total)
+    else:
+        print("Enter a positive number")
+except ValueError:
+    print("Enter the input as whole number")
+
